@@ -1,4 +1,4 @@
-package WebServer;
+
 
 import java.io.*;
 import java.net.*;
@@ -11,7 +11,7 @@ public class WebServer {
 	   String requestMessageLine;
 	   String fileName;
 	   
-	   ServerSocket listenSocket = new ServerSocket (14995);
+	   ServerSocket listenSocket = new ServerSocket (15000);
 	   Socket connectionSocket = listenSocket.accept();
 	   
 	   BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
